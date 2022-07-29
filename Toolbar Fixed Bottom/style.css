@@ -1,0 +1,55 @@
+.toolbar-fixed-bottom-cpn{
+	height: 186px;
+}
+.toolbar-fixed-bottom-cpn .toolbar-container{
+	font-size: 20px;
+	background: #fff;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 30px 200px;
+	border-top: 1px solid #ccc;
+}
+.toolbar-fixed-bottom-cpn .ask-question{
+	height: 80px;
+	background: #eee;
+	width: 250px;
+	border-radius: 10px;
+	border: 1px solid #ccc;
+	font-size: 20px;
+}
+.toolbar-fixed-bottom-cpn .flex-center{
+	display: flex;
+	align-items: center;
+	justify-content: center}
+.toolbar-fixed-bottom-cpn .favorite{
+	text-align: center;
+	height: 126px;
+	display: flex;
+	justify-content: end;
+	flex-direction: column;
+	margin: 0 250px 0 50px;
+}
+.toolbar-fixed-bottom-cpn .favorite i:before{
+	font-size: 80px;
+	color: #F4CECD;
+}
+.toolbar-fixed-bottom-cpn .total-price{
+	width: 300px;
+	height: 100px;
+	background: #fff;
+	border-radius: 10px;
+	font-size: 25px;
+	background: #FBEBEB;
+	border: 1px solid #B74646;
+}
+.toolbar-fixed-bottom-cpn .add-to-cart{
+	width: 500px;
+	height: 100px;
+	border-radius: 10px;
+	margin-left: 20px;
+	background: #B74646;
+	color: #fff;
+	font-size: 24px;
+}

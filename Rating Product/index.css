@@ -1,0 +1,23 @@
+.rating-product-cpn{
+	display: flex;
+	align-items: center;
+	margin-top: 5px;
+}
+.rating-product-cpn ul.gf_icon-list{
+	display: flex;
+	font-size: 25px;
+	color: #C78D2F;
+	letter-spacing: 5px;
+}
+.rating-product-cpn p.rating-text{
+	font-size: 24px;
+	margin: 0 0 0 10px;
+}
+@media (max-width: 767px){
+	.rating-product-cpn ul.gf_icon-list{
+		font-size: 18px;
+	}
+	 .rating-product-cpn p.rating-text{
+		font-size: 18px;
+	}
+}

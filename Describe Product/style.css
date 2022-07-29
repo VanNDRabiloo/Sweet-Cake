@@ -1,0 +1,24 @@
+.describe-product-cpn .list-product-img{
+	padding: 0 100px;
+}
+.describe-product-cpn .product-img-wrap{
+	padding: 40px 0;
+}
+.describe-product-cpn img.product-img{
+	border-radius: 10px;
+	height: 500px;
+	width: 100%;
+	object-fit: cover;
+}
+@media (max-width: 767px){
+	.describe-product-cpn .product-img-wrap{
+		padding: 0;
+		padding-bottom: 15px;
+	}
+	 .describe-product-cpn img.product-img{
+		height: 300px;
+	}
+	 .describe-product-cpn .list-product-img{
+		padding: 0;
+	}
+}

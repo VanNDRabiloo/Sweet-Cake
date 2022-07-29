@@ -1,0 +1,31 @@
+<div class="slider-product-cpn">
+  <div class="slider-for">
+    {% for item in product.images %}
+    <div class="mySlides">
+      <img src="//cdn.shopify.com/s/files/1/0549/8322/9573/{{ item }}" />
+    </div>
+    {% endfor %}
+  </div>
+  <div class="slider-nav">
+    {% for item in product.images %}
+    <div class="column">
+      <img src="//cdn.shopify.com/s/files/1/0549/8322/9573/{{ item }}" />
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+<script
+  type="text/javascript"
+  src="//code.jquery.com/jquery-1.11.0.min.js"
+></script>
+<script
+  type="text/javascript"
+  src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+  integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+></script>
