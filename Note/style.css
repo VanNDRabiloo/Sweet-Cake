@@ -27,6 +27,9 @@
 		font-size: 18px;
 		word-break: break-all;
 	}
+	 .note-cpn .check-list-content{
+		padding-bottom: 0 !important;
+	}
 }
 @media (max-width: 991px) and (min-width: 768px){
 	.note-cpn ul.list-text-note{

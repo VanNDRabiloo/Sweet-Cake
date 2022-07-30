@@ -1,7 +1,7 @@
 <div class="toolbar-fixed-bottom-cpn">
-  <div class="toolbar-container flex-center" style="display: none">
-    <div class="flex-center">
-      <div class="ask-question flex-center">ショップへ相談</div>
+  <div class="toolbar-container flex-center align-start-mobile" style="display: none">
+    <div class="flex-center flex-wrap-mobile" style="flex-basis: 40%; margin-right: 10px;">
+      <a href="/collections/all" class="ask-question flex-center">ショップへ相談</a>
       <div class="favorite">
       <div class="favorite-icon">
         <div class="gf_icon-wrap"><i class="gf_icon fa fa-star"></i></div>
@@ -9,8 +9,15 @@
       <div class="favorite-text">お気に入り</div>
     </div>
     </div>
-    <div class="flex-center">
-      <div class="total-price flex-center">合計：￥<span>XXX</span>（税込み）</div>
+    <div class="flex-center flex-wrap-mobile" style="flex-basis: 60%;">
+      <div class="total-price flex-center">
+  <div>合計：</div>
+  <div style="color: #B74646;">
+    <span class="current-price">￥</span>
+    <span class="number-price">{{cart.total_price}}</span>
+    <span class="tax-text">（税込）</span>
+  </div>
+</div>
       <div class="add-to-cart flex-center">カートに入れる</div>
     </div>
   </div>

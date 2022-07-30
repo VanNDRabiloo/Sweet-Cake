@@ -36,4 +36,7 @@
 	 .product-tag-container .product-tag-btn{
 		font-size: 18px;
 	}
+	 .product-tag-container .product-tag-btn{
+		padding: 10px 15px;
+	}
 }

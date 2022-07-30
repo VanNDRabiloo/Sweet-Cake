@@ -1,5 +1,5 @@
 .recommend-product-cpn .product-wrapper{
-	width: calc( 100% / 3 );
+	min-width: calc( (100% ) / 3 );
 	padding: 10px 30px;
 }
 .recommend-product-cpn img.gf_image{
@@ -36,8 +36,8 @@
 }
 .recommend-product-cpn .list-product{
 	display: flex;
-	flex-wrap: wrap;
-	margin: 0 -30px;
+	flex-wrap: nowrap;
+	overflow-x: scroll;
 }
 .recommend-product-cpn .price-product{
 	text-align: right;
@@ -63,8 +63,8 @@
 		align-items: flex-start !important;
 	}
 	 .recommend-product-cpn .product-wrapper{
-		width: calc( 100% );
-		padding: 10px 30px;
+		min-width: calc(100vw - 10px);
+		padding: 0 20px 14px 0;
 	}
 	 .recommend-product-cpn .name-product{
 		font-size: 22px;
@@ -82,7 +82,7 @@
 }
 @media (max-width: 991px) and (min-width: 768px){
 	.recommend-product-cpn .product-wrapper{
-		width: calc( 100% / 2 );
-		padding: 10px 30px;
+		min-width: calc( (100vw - 30px) / 2 );
+		padding: 15px 15px;
 	}
 }

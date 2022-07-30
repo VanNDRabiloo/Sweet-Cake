@@ -60,18 +60,14 @@
 	transition: all .4s ease-in-out;
 	opacity: 0;
 	visibility: hidden;
-	pointer-events: none;
 	transform: translateY(-15px);
 	text-align: left;
+	overflow: hidden;
 }
 .delivery-cpn .custom-select.opened .custom-options{
 	opacity: 1;
 	visibility: visible;
-	pointer-events: all;
 	transform: translateY(0);
-}
-.delivery-cpn .option-hover:before{
-	background: #f9f9f9;
 }
 .delivery-cpn .custom-option{
 	position: relative;
@@ -79,6 +75,7 @@
 	padding: 0 22px;
 	font-size: 18px;
 	color: #000;
+	background-color: #fff;
 	line-height: 47px;
 	cursor: pointer;
 	transition: all .4s ease-in-out;
@@ -90,8 +87,8 @@
 	border-bottom: 0;
 	border-radius: 0 0 4px 4px;
 }
-.delivery-cpn .custom-option:hover,.delivery-cpn .custom-option.selection{
-	background: #f9f9f9;
+.delivery-cpn .custom-option:hover{
+	background-color: #ccc;
 }
 @media (max-width: 767px){
 	.delivery-cpn .delivery-title{

@@ -1,6 +1,6 @@
-.product-processed-by-store-cpn .product-wrapper{
-	width: calc( 100% / 3 );
-	padding: 10px 30px;
+.product-processed-by-store-cpn .product-wrapper {
+    min-width: calc( (100vw - 120px) / 3 );
+    padding: 10px 30px;
 }
 .product-processed-by-store-cpn img.gf_image{
 	height: 200px;
@@ -36,7 +36,8 @@
 }
 .product-processed-by-store-cpn .list-product{
 	display: flex;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
+	overflow-x: scroll;
 	margin: 0 -30px;
 }
 .product-processed-by-store-cpn .price-product{
@@ -57,8 +58,8 @@
 }
 @media (max-width: 767px){
 	.product-processed-by-store-cpn .product-wrapper{
-		width: calc( 100% );
-		padding: 0 0 15px;
+		min-width: calc(100vw - 10px);
+		padding: 0 20px 14px 0;
 	}
 	 .product-processed-by-store-cpn .name-product{
 		font-size: 24px;
@@ -76,7 +77,7 @@
 }
 @media (max-width: 991px) and (min-width: 768px){
 	.product-processed-by-store-cpn .product-wrapper{
-		width: calc( 100% / 2 );
+		min-width: calc( (100vw - 30px) / 2 );
 		padding: 15px 15px;
 	}
 }
