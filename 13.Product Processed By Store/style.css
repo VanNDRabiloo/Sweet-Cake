@@ -1,6 +1,6 @@
-.product-processed-by-store-cpn .product-wrapper {
-    min-width: calc( (100vw - 120px) / 3 );
-    padding: 10px 30px;
+.product-processed-by-store-cpn .product-wrapper{
+	min-width: calc( (100%) / 3 );
+	padding: 10px 30px;
 }
 .product-processed-by-store-cpn img.gf_image{
 	height: 200px;
@@ -58,7 +58,7 @@
 }
 @media (max-width: 767px){
 	.product-processed-by-store-cpn .product-wrapper{
-		min-width: calc(100vw - 10px);
+		min-width: calc(100vw - 30px);
 		padding: 0 20px 14px 0;
 	}
 	 .product-processed-by-store-cpn .name-product{
