@@ -8,18 +8,20 @@
 
   <div class="choosing-product text-align-center">
     {% for option in product.variants %}
-      <button class="product-option product-option-1" onclick="handleChooseOptionProduct(event, '{{option.price}}')">{{ option.option1 }}</button>
+      <button class="product-option product-option-1" data-id="{{option.id}}" onclick="handleChooseOptionProduct(event, '{{option.price}}', '{{option.id}}')">{{ option.option1 }}</button>
     {% endfor %}
   </div>
   <div class="choosing-product" style="margin-left: 0;">
-    {% for option in product.variants limit:1 %}
-      <button class="product-option product-option-2" onclick="handleChooseOptionProduct2(event)">{{ option.option2 }}</button>
-    {% endfor %}
+    {% if product.variants[0].option2.size &gt; 0 %}
+      {% for option in product.variants limit:1 %}
+        <button class="product-option product-option-2" onclick="handleChooseOptionProduct2(event)">{{ option.option2 }}</button>
+      {% endfor %}
+    {% endif %}
   </div>
   
   <div class="price-wrapper">
   <div class="price">
-    <span class="price-number">￥<span>{{product.variants[0].price}}</span> </span>
+    <span class="price-number">￥<span>{{product.variants[0].price  | money_without_currency |}}</span></span>
     <span class="other">（税込）</span>
   </div>
   <div class="scored-added">

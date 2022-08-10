@@ -14,11 +14,25 @@
   <div>合計：</div>
   <div style="color: #B74646;">
     <span class="current-price">￥</span>
-    <span class="number-price">{{cart.total_price}}</span>
+    <span class="number-price">{{cart.total_price | money_without_currency }}</span>
     <span class="tax-text">（税込）</span>
   </div>
 </div>
-      <div class="add-to-cart flex-center">カートに入れる</div>
+    <div class="add-to-cart flex-center" onclick="addProductToCart()">カートに入れる</div>
+    <img class="product-added-animation animate__animated animate__zoomOutUp">
     </div>
   </div>
 </div>
+
+<div class="toast-message-cpn">
+  <div id="toast"></div>
+
+  <div>
+    <div onclick="showErrorToast();" class="btn btn--danger">Show error toast</div>
+  </div>
+</div>
+
+<script>var product = {{product | json }}</script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">

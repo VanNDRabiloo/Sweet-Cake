@@ -1,9 +1,10 @@
-function handleChooseOptionProduct(event, price) {
+function handleChooseOptionProduct(event, price, id) {
   for (var i = 0, len = $(".choose-product-option-cpn .product-option-1").length; i < len; i++) {
     $(".choose-product-option-cpn .product-option-1")[i].classList.remove('active')
   }
   event.target.classList.toggle('active')
-  $(".choose-product-option-cpn .price-number span").text(price)
+  const priceFormated = new Intl.NumberFormat().format(price/100);
+  $(".choose-product-option-cpn .price-number span").text(priceFormated)
 }
 
 function handleChooseOptionProduct2(event) {

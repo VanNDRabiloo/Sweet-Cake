@@ -12,6 +12,6 @@ $(".delivery-cpn .custom-select.sources").on("click", (function(e) {
   e.currentTarget.classList.toggle('opened')
   e.stopPropagation()
 }))
-$('html').one('click',function() {
+$('html').on('click',function() {
     $(".delivery-cpn .custom-select").removeClass("opened");
   });

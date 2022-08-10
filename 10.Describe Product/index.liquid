@@ -6,11 +6,6 @@
   <div class="check-list-text" style="font-size: 24px;">注意事項</div>
   </div>
 
-  <div class="list-product-img">
-    {% for img in product.images %}
-      <div class="product-img-wrap">
-        <img class="product-img" src="//cdn.shopify.com/s/files/1/0549/8322/9573/{{img}}">
-      </div>
-    {% endfor %}
-  </div>
+  <div class="list-product-img"></div>
 </div>
+<script>var product = ({{product | json }})</script>

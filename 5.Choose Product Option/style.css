@@ -30,7 +30,7 @@
 }
 .choose-product-option-cpn span.other{
 	font-size: 20px;
-	line-height: 64px;
+	line-height: 84px;
 }
 .choose-product-option-cpn .price{
 	display: flex;
@@ -55,6 +55,7 @@
 	}
 	 .choose-product-option-cpn span.other{
 		font-size: 18px !important;
+		line-height: 64px;
 	}
 	 .choose-product-option-cpn .scored-added >span{
 		font-size: 20px !important;

@@ -37,7 +37,7 @@
 .recommend-product-cpn .list-product{
 	display: flex;
 	flex-wrap: nowrap;
-	overflow-x: scroll;
+	overflow-x: auto;
 }
 .recommend-product-cpn .price-product{
 	text-align: right;

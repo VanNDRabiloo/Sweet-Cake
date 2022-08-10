@@ -11,6 +11,11 @@
 	background-color: #FAEFEC;
 	font-size: 24px;
 	color: rgba(0,0,0,0.7);
+	cursor: pointer;
+	transition: .3s;
+}
+.product-tag-container .product-tag-btn:hover{
+	background-color: #f9d4d1;
 }
 .product-tag-container .product-tag{
 	margin-right: 10px;
